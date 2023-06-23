@@ -2,7 +2,7 @@ import { Component } from "react";
 
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics/Statistics";
-import { Section } from "./Counter/Section/Section";
+import { Section } from "./Section/Section";
 import { Notification } from "./Notification/Notification";
 import styles from "./Statistics/Statistics.module.css"
 export class App extends Component  {

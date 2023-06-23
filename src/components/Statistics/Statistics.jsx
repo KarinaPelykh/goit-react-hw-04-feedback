@@ -1,4 +1,6 @@
-export const Statistics = ({total, bad,neutral,good, positivePercentage}) => {
+import PropTypes from "prop-types";
+
+export const Statistics = ({ total, bad, neutral, good, positivePercentage }) => {
    return  <>
                 <p>Good:{good}</p>
                 <p>Neutral:{neutral}</p>
@@ -7,4 +9,10 @@ export const Statistics = ({total, bad,neutral,good, positivePercentage}) => {
       <p>Positive feedback:{positivePercentage}%</p>
    </>
 }
-
+Statistics.propTypes = {
+   total:PropTypes.number,
+   bad:PropTypes.number,
+   neutral:PropTypes.number,
+   good:PropTypes.number,
+   positivePercentage:PropTypes.number
+}
