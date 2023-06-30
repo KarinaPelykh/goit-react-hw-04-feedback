@@ -1,5 +1,5 @@
 
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
@@ -12,12 +12,12 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </>
   );
 };
-FeedbackOptions.propTypes = {
-  onLeaveFeedback:PropTypes.func,
-  option: PropTypes.shape({
-     bad:PropTypes.number,
-   neutral:PropTypes.number,
-   good:PropTypes.number,
-  })
+// FeedbackOptions.propTypes = {
+//   onLeaveFeedback:PropTypes.func,
+//   option: PropTypes.shape({
+//      bad:PropTypes.number,
+//    neutral:PropTypes.number,
+//    good:PropTypes.number,
+//   })
   
-}
+// }
