@@ -6,17 +6,7 @@ import { Section } from "./Section/Section";
 import { Notification } from "./Notification/Notification";
 import styles from "./Statistics/Statistics.module.css"
 export const App = () => {
-//    state = {
-//         good: 0,
-//         neutral: 0,
-//         bad: 0
-//   }
-  
-//   handlerFeedback = (key) => {
-//  this.setState((prevState) => ({ 
-//       [key]:prevState[key] +1
-//     }))
-//   }
+
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0)
@@ -31,18 +21,17 @@ export const App = () => {
     }
   }
     const countTotalFeedback = () => {
-      // return Object.values(state).reduce((acc, el) => acc + el, 0)
+
  return good + neutral + bad
     };
     const countPositiveFeedbackPercentage = () => {
-      // const total =countTotalFeedback();
-      // const { good } = setGood
+
       const sum = total !== 0 ? Math.round((good / total) * 100) : 0
       return sum
            
     }
  
-    // const { good, neutral, bad, }
+
     const total =countTotalFeedback();
     const result = countPositiveFeedbackPercentage();
     return <div className={styles.wrapper}>
