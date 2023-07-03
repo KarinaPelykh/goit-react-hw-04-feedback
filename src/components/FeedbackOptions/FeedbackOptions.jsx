@@ -1,10 +1,8 @@
-
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
-     
-      {options.map((option) => (
+      {options.map(option => (
         <button key={option} onClick={() => onLeaveFeedback(option)}>
           {option}
         </button>
@@ -13,11 +11,10 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   );
 };
 FeedbackOptions.propTypes = {
-  onLeaveFeedback:PropTypes.func,
+  onLeaveFeedback: PropTypes.func,
   option: PropTypes.shape({
-     bad:PropTypes.number,
-   neutral:PropTypes.number,
-   good:PropTypes.number,
-  })
-  
-}
+    bad: PropTypes.number,
+    neutral: PropTypes.number,
+    good: PropTypes.number,
+  }),
+};
